@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Berlin</title>
+
+	<meta charset="utf-8" />
+
+	<!-- mapbox script and css -->
+	<!-- Mapbox is a tile provider for maps. When you load a map it usually consists of multiple tiles, which load separately. Those tiles are provided by mapbox or another map tile provider. -->
+	<script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+	<link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' />
+
+
+	<!-- leaflet script and css -->
+	<!-- leaflet manages the creation of the map on the webpage -->
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+
+	<!-- jQuery -->
+	<!-- Currently jQuery is only used for:
+		(1) ensuring, that leaflet is not run before the pag has completed loading, using $(document).ready()
+		(2) executing ajax requests in a simpler way
+	-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+	<!-- my ecma scripts -->
+	<link rel="stylesheet" type="text/css" href="css/map.css" />
+	<script type="text/javascript" src="js/map.js"></script>
+</head>
+<body>
+	<h1>Where to live in Berlin?</h1>
+	<p>The displayed map shows the best places to live in Berlin.</p>
+	<div id="map"></div>
+</body>
+</html>
